@@ -1,0 +1,14 @@
+transformer_translator_backend/
+│
+├── app/
+│   ├── __init__.py
+│   ├── main.py            # Flask app entry
+│   ├── routes.py          # /translate API
+│   ├── models.py          # Load EN-HI, EN-FR MarianMT
+│   ├── translator.py      # Inference + attention extraction
+│   └── attention_utils.py # Cross-attention processing
+│
+├── config.py              # Model names, device=cpu
+├── requirements.txt
+├── run.py                 # Start server
+└── Dockerfile
